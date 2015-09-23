@@ -1,6 +1,6 @@
 <?php
   // Include the zip engine
-	include_once(__DIR__.'/classes/ZipEngine.php');
+	include_once(__DIR__.'/classes/class.ZipEngine.php');
 	// Include the directory iterator
 	include_once(__DIR__.'/functions/function.get_directory_list.php');
 	// Save name
