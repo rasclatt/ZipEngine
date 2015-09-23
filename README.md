@@ -1,5 +1,5 @@
 # ZipEngine
-A quick and dirty save to disk or download zip archive class
+A quick and dirty save to disk or download zip archive class for PHP. Not frills, just add files and go. Uses the ZipArchive class (required).
 
 **Example of use:**
 
