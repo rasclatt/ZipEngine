@@ -1,3 +1,4 @@
+<?php
 	function get_directory_list($settings = false)
 		{
 			$directory		=	(!empty($settings['dir']))? $settings['dir']:CLIENT_DIR."/";
