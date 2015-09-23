@@ -17,4 +17,4 @@
 	// Stores them on the server
 	$ZipEngine->ZipAndStore($folder);
 	// Alternatively you can download them
-	// $ZipEngine->DownloadZip();
+	// $ZipEngine->Zipit($folder);
