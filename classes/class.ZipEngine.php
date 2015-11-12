@@ -18,7 +18,7 @@
 						mkdir($this->rootdir,0755,true);
 				}
 				
-			public	function Zipit($zipname = false)
+			public	function Zipit($zipname = false,$saveLocal = false)
 				{
 					if(isset($this->files) && !empty($this->files)) {
 							
@@ -29,7 +29,10 @@
 							$this->zipeng->open($this->rootdir.$this->zipname, ZipArchive::CREATE);
 							
 							foreach($this->files as $filelocation) {
-									$this->zipeng->addFile($filelocation,basename($filelocation));
+									if($saveLocal)
+										$this->zipeng->addFile($filelocation,basename($filelocation));
+									else
+										$this->zipeng->addFile($filelocation);
 								//	unlink($filelocation);
 								}
 								
